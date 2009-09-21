@@ -3,14 +3,14 @@
   <groupId>org.jvnet.robust-http-client</groupId>
   <artifactId>robust-http-client</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <name>Robust HTTP client library</name>
   <url>http://maven.apache.org</url>
 
   <scm>
-    <connection>scm:svn:https://svn.dev.java.net/svn/robust-http-client/tags/robust-http-client-1.0</connection>
-    <developerConnection>scm:svn:https://svn.dev.java.net/svn/robust-http-client/tags/robust-http-client-1.0</developerConnection>
-    <url>https://robust-http-client.dev.java.net/source/browse/robust-http-client/tags/robust-http-client-1.0</url>
+    <connection>scm:svn:https://svn.dev.java.net/svn/robust-http-client/</connection>
+    <developerConnection>scm:svn:https://svn.dev.java.net/svn/robust-http-client</developerConnection>
+    <url>https://robust-http-client.dev.java.net/source/browse/robust-http-client</url>
   </scm>
 
   <distributionManagement>
