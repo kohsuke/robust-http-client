@@ -63,7 +63,7 @@ public class RetryableHttpStream extends InputStream {
             throw new IllegalArgumentException(url+" is not an HTTP URL");
         this.proxy = proxy;
 
-        connection = connect(url, proxy);
+        connection = connect();
         totalLength = connection.getContentLength();
         in = getStream(connection);
     }
@@ -75,7 +75,10 @@ public class RetryableHttpStream extends InputStream {
         return con.getInputStream();
     }
 
-    private HttpURLConnection connect(URL url, Proxy proxy) throws IOException {
+    /**
+     * Opens the URL and makes a connection.
+     */
+    protected HttpURLConnection connect() throws IOException {
         return (HttpURLConnection)(proxy != null ? url.openConnection(proxy) : url.openConnection());
     }
 
@@ -86,7 +89,7 @@ public class RetryableHttpStream extends InputStream {
         while(true) {
             shallWeRetry();
 
-            HttpURLConnection con = connect(url, proxy);
+            HttpURLConnection con = connect();
             con.setRequestProperty("Range","bytes="+read+"-");
             con.connect();
 
