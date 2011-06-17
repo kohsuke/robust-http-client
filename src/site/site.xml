@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Robust HTTP client library">
+  <skin>
+    <groupId>org.kohsuke</groupId>
+    <artifactId>maven-skin</artifactId>
+    <version>1.1</version>
+  </skin>
+
+  <body>
+    <menu name="Robust HTTP client library">
+      <item name="Overview" href="index.html"/>
+
+      <!--item name="Mailing lists" href="servlets/ProjectMailingListList"/-->
+      <item name="Source code" href="https://github.com/kohsuke/robust-http-client"/>
+      <item name="Issues" href="http://java.net/jira/browse/ROBUST_HTTP_CLIENT"/>
+    </menu>
+    ${reports}
+  </body>
+</project>
